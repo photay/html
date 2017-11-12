@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <script type="text/javascript" src="http://mbostock.github.com/d3/d3.js"></script>
+    </head>
+    <body>
+      <div id="example">
+        <svg width="1000" height="1000">
+          <circle id = "myCircle" cx="350" cy="600" r="300" ></circle>
+        </svg>
+      </div>
+      <script type="text/javascript">
+        var boolVal = true;
+        var circleDemo = d3.select("#myCircle");
+          circleDemo.on("click", click)
+          function click(d){
+            if(boolVal){
+              circleDemo.attr("r", 40);
+              circleDemo.style("stroke", "black");
+              circleDemo.style("fill", "orange");  
+              boolVal = false;
+            }else{
+              circleDemo.attr("r", 300);
+              circleDemo.style("stroke", "black");
+              circleDemo.style("fill", "black");  
+              boolVal = true;
+            }
+          }  
+      </script>
+    </body>
+  </html>
+		

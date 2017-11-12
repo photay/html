@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <script type="text/javascript" src="http://mbostock.github.com/d3/d3.js">
+       
+     </script>
+    <style>
+      body{
+        background-color: pink;
+      }
+      #sec_1{
+         background-image: url("cat1.jpeg");
+      }
+      #sec_2{
+         background-image: url("cat2.jpeg");
+      }
+      #sec_3{
+         background-image: url("cat3.jpeg");
+      }
+      #sec_4{
+         background-image: url("cat4.jpeg");
+      }
+      div.cat-img{
+         padding-top: 400px;
+         height: 400px;
+         background-size: 100% 100%;
+      }
+      div.transbox {
+        margin: auto;
+        width: 50%;
+        background-color: #ffffff;
+        border: 1px solid black;
+        opacity: 0.6;
+        filter: alpha(opacity=60); /* For IE8 and earlier */
+      }
+      div.transbox p {
+        text-align: center;
+        margin: 5%;
+        font-weight: bold;
+        color: #000000;
+      }
+      h1.header{
+        text-align: center;
+        color: purple;
+        font: serif;
+        font-style: italic;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 class='header'>PAGE TITLE</div>
+    <div id='container'>
+      <div id='sec_1' class='cat-img'>
+         <div class="transbox">
+          <p>This is the first cute cat.</p>
+        </div>
+      </div>
+      <div id='sec_2' class='cat-img'>
+         <div class="transbox">
+          <p>You are now at cat 2.</p>
+        </div>
+      </div>
+      <div id='sec_3' class='cat-img'>
+         <div class="transbox">
+          <p>This cat is apalling.</p>
+        </div>
+      </div>
+      <div id='sec_4' class='cat-img'>
+        <div class="transbox">
+          <p>AWWWWWW!</p>
+        </div>
+      </div>
+    </div>
+    <h1 class='header'>THE END</h1>
+  </body>
+</html>
